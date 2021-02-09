@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+    <head>
+        <title>
+            This is a template
+        </title>
+        {% comment %} <link type="stylesheet" src="{%static 'css/style.css'%}/> {% endcomment %}
+    </head>
+    <body>
+            {% if websites %}
+            <table>
+                <th>
+                    Website Name
+                </th>
+                <th>
+                    Url
+                </th>
+                <th>
+                    Topic
+                </th>
+                {% for website in websites %}
+                    <tr>
+                        <td>
+                            {{website.website_name}}
+                        </td>
+                        <td>
+                            {{website.url}}
+                        </td>
+                        <td>
+                            {{website.topic.topic_name}}
+                        </td>
+                    </tr>   
+                {% endfor %}            
+            </table
+            {% else %}
+            {% endif %}
+
+    </body>
+</html>
