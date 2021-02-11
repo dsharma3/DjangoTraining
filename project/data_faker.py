@@ -1,6 +1,8 @@
 import os
+# from django.conf import settings
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'first_project.settings')
+# settings.configure()
 
 import django
 django.setup()
