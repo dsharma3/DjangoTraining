@@ -16,3 +16,11 @@
 #3 Population scripts
 #4 Model Template View Paradigm
 #5 Excercise
+
+#13th Feb
+# Url templating
+# template inheritance
+# create a solution
+# create a crud app.
+
+    

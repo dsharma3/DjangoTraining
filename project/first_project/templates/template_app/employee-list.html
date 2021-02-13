@@ -1,0 +1,29 @@
+{% extends 'template_app/index.html' %}
+
+{% block  body_block%}
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Contact</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for employee in employees%}
+        <tr>            
+            <td>{{employee.employee_id}}</td>
+            <td>{{employee.first_name}}</td>
+            <td>{{employee.last_name}}</td>
+            <td>{{employee.age}}</td>
+            <td><a name="" id="" class="btn btn-primary" href="/employee/" role="button">Edit</a></td>
+            <td><a name="" id="" class="btn btn-primary" href="/employee/" role="button">Delete</a></td>
+        </tr>  
+        {%endfor%}   
+    </tbody>
+</table>
+<a name="" id="" class="btn btn-primary" href="/employee/" role="button">Add</a>
+{% endblock %}

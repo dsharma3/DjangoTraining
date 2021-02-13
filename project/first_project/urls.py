@@ -18,6 +18,6 @@ from django.urls import path
 from simple_app import views
 from django.conf.urls import include
 urlpatterns = [
-    path('admin1/', admin.site.urls),
-    path('', include('simple_app.urls'))
+    path('admin1/', admin.site.urls),   
+    path('', include('template_app.urls')),
 ]

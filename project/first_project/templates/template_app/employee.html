@@ -1,0 +1,45 @@
+{% extends 'template_app/index.html' %}
+
+{% block  body_block%}
+
+<form action="/employee/" method="POST">  
+
+{% csrf_token %}
+    <div class="form-group">
+    <label for="">Id</label>
+    <div>
+        {{form.employee_id}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="">First name</label>
+    <div>
+        {{form.first_name}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="">Last name</label>
+    <div>
+        {{form.last_name}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="">Age</label>
+    <div>
+        {{form.age}}
+    </div>
+    </div>
+
+    <div class="form-group">
+    <label for="">Contact</label>
+    <div>
+        {{form.contact_number}}
+    </div>
+    </div>
+
+    <input type="submit" class="btn btn-primary" value = "Submit">
+</form>
+{% endblock %}
