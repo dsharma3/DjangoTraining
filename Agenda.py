@@ -23,4 +23,8 @@
 # create a solution
 # create a crud app.
 
+#15th Feb
+# Postgre SQL
+# Migrate the Data
+# Class based view.
     
