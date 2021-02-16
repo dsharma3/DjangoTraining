@@ -25,7 +25,7 @@ SECRET_KEY = 'dqtde)(1+1$b&#p%f-w*8i5@rdvy&$ufh9^d-oh0ph0%en(dwc'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['dsharma3.pythonanywhere.com']
 
 
 # Application definition
